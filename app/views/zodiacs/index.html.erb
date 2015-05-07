@@ -1,0 +1,15 @@
+<h1>List of Zodiacs</h1>
+<table class="table">
+<tr>
+<th>Sign</th>
+<th>Creature</th>
+<th>Actions</th>
+</tr>
+<% @list_of_zodiacs.each do |zodiac| %>
+
+<tr>
+<th><%= zodiac.sign %></th>
+<th><%= zodiac.creature %></th>
+<td><a href="delete/<%= zodiac.id %>">delete</a></td>
+</tr>
+<% end %>
